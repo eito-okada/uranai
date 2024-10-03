@@ -1,9 +1,0 @@
-{
-    "name": "my-app",
-    "version": "1.0.0",
-    "description": "My PHP Application",
-    "scripts": {
-        "prestart": "apt-get update && apt-get install -y php",
-        "start": "php -S 0.0.0.0:8000 -t src"
-    }
-}  
