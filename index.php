@@ -17,7 +17,7 @@
                 <p>占い結果</p>
             </div>
             <div class="constaMain">
-                <form action="index.php" method="get">
+                <form action="./" method="get">
                     <select name="consta">
                         <option value="牡羊座" <?php if(isset($_GET['consta']) && $_GET['consta'] == '牡羊座') echo 'selected'; ?>>牡羊座（おひつじ座）</option>
                         <option value="牡牛座" <?php if(isset($_GET['consta']) && $_GET['consta'] == '牡牛座') echo 'selected'; ?>>牡牛座（おうし座）</option>
