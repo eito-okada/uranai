@@ -148,27 +148,10 @@ button:active {
     padding-left: 3vw;
 }
 
-/* Add responsive design */
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
     .main {
-        max-width: 90%;
-        padding: 4vh 4vw;
-    }
-
-    form {
-        flex-direction: column;
-        gap: 2vh;
-    }
-
-    button {
-        width: 100%;
-    }
-}
-
-@media (max-width: 600px) {
-    .main {
-        max-width: 95%;
-        padding: 6vh 4vw;
+        max-width: 85%;
+        padding: 3vh 2vw;
     }
 
     form {
@@ -181,7 +164,42 @@ button:active {
     }
 
     .resultTable th, .resultTable td {
-        font-size: 1.2em;
+        font-size: 1.1em;
         padding: 1.5em;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+    .header {
+        font-size: 2em; /* Reduce the font size for header */
+    }
+
+    .main {
+        max-width: 100%;
+        padding: 4vh 4vw;
+    }
+
+    form {
+        flex-direction: column;
+        width: 100%; /* Make form take the full width */
+        gap: 2vh;
+    }
+
+    select, button {
+        width: 100%; /* Full-width buttons and selects on mobile */
+        padding: 1.2em;
+        font-size: 1.1em;
+    }
+
+    .resultTable th, .resultTable td {
+        font-size: 1.0em; /* Slightly smaller font size for table data */
+        padding: 1.2em;
+        word-wrap: break-word; /* Ensure words break properly on smaller screens */
+    }
+
+    .constaResults {
+        font-size: 1.0em; /* Slightly smaller font size for results */
+        padding: 2vh 2vw;
     }
 }
